@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Nguyen Van Huy - CS Student">
+    <title>Huy Nguyen | Contact</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/vi/thumb/2/29/Logo-HCMIU.svg/960px-Logo-HCMIU.svg.png?_=20230314065952" type="image/png">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="https://upload.wikimedia.org/wikipedia/vi/thumb/2/29/Logo-HCMIU.svg/960px-Logo-HCMIU.svg.png?_=20230314065952" alt="HCMIU Logo" style="height: 40px; display: block;"></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="map.html">Visit</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <h2>Get in Touch</h2>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Nguyen Van A">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="nguyenvana@example.com">
+        </fieldset>
+
+        <fieldset>
+            <legend>Inquiry Details</legend>
+            <label for="subject">Topic:</label>
+            <input list="topics" id="subject" name="subject">
+            <datalist id="topics">
+                <option value="Data Science">
+                <option value="Webapp Development">
+                <option value="Game Development">
+            </datalist>
+
+            <label>Urgency:</label>
+            <input type="range" min="1" max="5" name="urgency">
+
+            <label for="msg">Message:</label>
+            <textarea id="msg" name="msg" rows="4" placeholder="Enter your message here..."></textarea>
+        </fieldset>
+
+        <button type="submit">Send Message</button>
+        <button type="reset">Clear Form</button>
+    </form>
+</main>
+    <footer><p>&copy; 2026 Nguyen Van Huy</p></footer>
+</body>
+</html>
